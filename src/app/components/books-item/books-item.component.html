@@ -1,0 +1,18 @@
+<div class="card my-3 shadow">
+  <div class="card-body">
+    <h5 class="card-title">{{ book?.title }}</h5>
+    <p class="card-text">
+      {{ book?.description }}
+    </p>
+    <div>
+      <p>Rs. {{ book?.price }}</p>
+    </div>
+    <button (click)="onDeleteClick(book?._id)" class="btn btn-danger">
+      Delete
+    </button>
+  </div>
+  <div class="card-footer text-muted">
+    <div>Book code:</div>
+    <div>{{ book?._id }}</div>
+  </div>
+</div>
